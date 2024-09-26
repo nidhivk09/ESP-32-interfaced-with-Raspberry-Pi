@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sensor Data</title>
+    <style>
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid black; padding: 8px; text-align: center; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h1>Sensor Data</h1>
+    <table>
+        <tr>
+            <th>Temperature (°C)</th>
+            <th>Humidity (%)</th>
+        </tr>
+        <tr>
+            <td><%= sensorData.temperature !== null ? sensorData.temperature : 'N/A' %></td>
+            <td><%= sensorData.humidity !== null ? sensorData.humidity : 'N/A' %></td>
+        </tr>
+    </table>
+    <br />
+    <button onclick="location.reload();">Refresh</button>
+</body>
+</html>
