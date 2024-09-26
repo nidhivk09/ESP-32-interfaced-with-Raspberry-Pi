@@ -7,10 +7,9 @@
 
 DHT dht(DHTPIN, DHTTYPE);
 
-const char* ssid = "motorola edge 50 pro_7255";
-const char* password = "sr2har123";
-//const char* mqtt_server = "192.168.127.191/24"; // Your Wi-Fi password
-//const char* mqttBrokerUrl = "http://192.168.127.191:3000"; // Public MQTT broker for testing
+const char* ssid = "wifiname";
+const char* password = "wifipassword";
+
 const char* mqttBrokerUrl = "broker.hivemq.com";
 
 WiFiClient espClient;
